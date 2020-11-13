@@ -13,9 +13,10 @@ return (
 		data.map(d => (
 	<CardItem
 	postTitle={d.postTitle} 
-	postBody={d.postBody}
+				postBody={d.postBody}
+				postQuote={d.postQuote}
 	postLink={d.postLink}
-	postImg={d.postImg}
+	
 	/> 
 		))
 			}

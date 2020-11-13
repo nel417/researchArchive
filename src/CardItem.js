@@ -7,16 +7,16 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 // import CardMedia from '@material-ui/core/CardMedia';
 
-
 const useStyles = makeStyles({
 	root: {
 	  minWidth: 275,
 	  width: 360,
 	  padding: 5,
 	  margin: 20,
+	  borderRadius: 10,
 	},
 	title: {
-	  fontSize: 24,
+	  fontSize: 28,
 	},
 	pos: {
 	  marginBottom: 12,
@@ -28,14 +28,9 @@ const useStyles = makeStyles({
 	// 	height: 540,
 	// }
   });
-
-
-
 export default function CardItem(props) {
 	const classes = useStyles();
-  
 	return (
-
 		<Card className={classes.root} variant="outlined" >
 		 {/* <CardMedia
           className={classes.media}
@@ -43,20 +38,19 @@ export default function CardItem(props) {
           title="Contemplative Reptile"
         /> */}
 		<CardContent>
-		  <Typography className={classes.title} color="textSecondary" gutterBottom>
+		  <Typography className={classes.title} color="textSecondary" gutterBottom style={{fontFamily: 'Roboto Mono'}}>
 			{props.postTitle}
 		  </Typography>
-		  <Typography variant="h6" component="h4" className={classes.body}>
+		  <Typography variant="p" component="p" className={classes.body} style={{fontFamily: 'Roboto Mono', lineHeight: 1.5}}>
 			{props.postBody}
 		  </Typography>
-		  <Typography variant="body2" component="p">
-			well meaning and kindly.
-			<br />
-			{'"a benevolent smile"'}
+				<Typography variant="body2" component="p">
+					<br />
+			<i>{props.postQuote}</i>
 		  </Typography>
 		</CardContent>
 		<CardActions>
-		<Button size="small" href={props.postLink}>	hello</Button>
+		<Button size="small" href={props.postLink} target="_blank">View</Button>
 		</CardActions>
 		</Card>
 	);
