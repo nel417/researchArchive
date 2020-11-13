@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import CardItem from './CardItem'
+import Title from './Title'
+import data from './data'
+import Box from '@material-ui/core/Box';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+return (
+	<div>
+		<Title />
+	<Box display="flex" flexDirection="row" flexWrap="wrap" justifyContent="center">
+		{
+		data.map(d => (
+	<CardItem
+	postTitle={d.postTitle} 
+	postBody={d.postBody}
+	postLink={d.postLink}
+	postImg={d.postImg}
+	/> 
+		))
+			}
+		</Box>
+	</div>
+  )
 }
-
 export default App;
