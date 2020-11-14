@@ -2,6 +2,27 @@
 
 let  data = [
 	{
+		postTitle: "Open source for all",
+		postBody: "A talk about how you can get into open source and how to find projects. Open source isnt just implementing a giant feature or fixing a nasty bug. A lot of times, you can audit and find your own problems to fix!",
+		postQuote: "'I can shameless plug right?'",
+		postLink: "https://www.youtube.com/watch?v=Ek7rbkipHs0",
+
+	},
+	{
+		postTitle: "Free programming books",
+		postBody: "This list was originally a clone of StackOverflow - List of Freely Available Programming Books with contributions from Karan Bhangui and George Stocker.",
+		postQuote: "'Free????????!!!!!!!!!!!'",
+		postLink: "https://github.com/EbookFoundation/free-programming-books",
+
+	},
+	{
+		postTitle: "Laws of UX",
+		postBody: "Product Designer Jon Yablonski recently created an incredible website outlining the maxims principles that designers can consider when building user interfaces.",
+		postQuote: "'So.. design is psychology?'",
+		postLink: "https://www.youtube.com/watch?v=fYs2Mdyasuc",
+
+	},
+	{
 		postTitle: "6 months or less code bootcamp",
 		postBody: "Resources to help you get a jr dev job. Start with the first block at the bottom (playlist of thinking like a coder) and work up.",
 		postQuote: "'I can drink beer at work? sign me up!'",

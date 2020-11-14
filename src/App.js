@@ -8,19 +8,18 @@ const App = () => {
 return (
 	<div>
 		<Title />
-	<Box display="flex" flexDirection="row" flexWrap="wrap" justifyContent="center">
-		{
-		data.map(d => (
-	<CardItem
-	postTitle={d.postTitle} 
-				postBody={d.postBody}
-				postQuote={d.postQuote}
-	postLink={d.postLink}
-	
-	/> 
-		))
+		<Box display="flex" flexDirection="row" flexWrap="wrap" justifyContent="center">
+			{
+			data.map(d => (
+			<CardItem
+			postTitle={d.postTitle} 
+			postBody={d.postBody}
+			postQuote={d.postQuote}
+			postLink={d.postLink}
+			/> 
+			))
 			}
-		</Box>
+		 </Box>
 	</div>
   )
 }
